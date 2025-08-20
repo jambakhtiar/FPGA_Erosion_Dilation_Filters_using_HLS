@@ -1,0 +1,3 @@
+relativeroot=/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_ArrayPartition
+original_argv=-c --mode hls --config /home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_ArrayPartition/hls_config.cfg --work_dir MM_ArrayPartition 
+

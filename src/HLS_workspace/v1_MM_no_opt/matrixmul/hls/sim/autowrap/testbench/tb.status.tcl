@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/./sim/autowrap/testbench/matrixmul.cpp_pre.cpp.tb.cpp

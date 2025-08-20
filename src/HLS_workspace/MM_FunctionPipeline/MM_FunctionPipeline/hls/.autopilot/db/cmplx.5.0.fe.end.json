@@ -1,0 +1,17 @@
+{
+    "0": {
+        "name": "matrixmul",
+        "file": "..\/files\/matrixmul.cpp",
+        "fileloc": "4",
+        "instructions": "140",
+        "total_instructions": "140",
+        "calls": "",
+        "basicblocks": "1",
+        "loads": {
+            "T": "18"
+        },
+        "stores": {
+            "T": "9"
+        }
+    }
+}

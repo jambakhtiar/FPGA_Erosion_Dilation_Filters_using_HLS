@@ -1,0 +1,271 @@
+<ENTRY>
+{
+ "thisFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/matrixmul.hlsrun_impl_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Jul 19 16:47:44 2025",
+ "timestampMillis": "1752925664087",
+ "buildStep": {
+  "cmdId": "53b9150b-5cec-4a5d-95ed-9564e7eb3fce",
+  "name": "vitis-run",
+  "logFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/logs/matrixmul.steps.log",
+  "commandLine": "/home/jam/xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --impl --config /home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/hls_config.cfg --work_dir matrixmul ",
+  "args": [
+   "--mode",
+   "hls",
+   "--impl",
+   "--config",
+   "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/hls_config.cfg",
+   "--work_dir",
+   "matrixmul"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jul 19 16:47:44 2025",
+ "timestampMillis": "1752925664087",
+ "status": {
+  "cmdId": "53b9150b-5cec-4a5d-95ed-9564e7eb3fce",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Jul 19 16:47:50 2025",
+ "timestampMillis": "1752925670696",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_IMPL",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrixmul",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/files/matrixmul.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Jul 19 16:47:50 2025",
+ "timestampMillis": "1752925670697",
+ "buildStep": {
+  "cmdId": "5dcd11ca-b45d-4653-8e71-4552b3e8860a",
+  "name": "export_design",
+  "logFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/hls.log",
+  "commandLine": "export_design -flow impl",
+  "args": [
+   "-flow",
+   "impl"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jul 19 16:47:50 2025",
+ "timestampMillis": "1752925670697",
+ "status": {
+  "cmdId": "5dcd11ca-b45d-4653-8e71-4552b3e8860a",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:47:50 2025",
+ "timestampMillis": "1752925670698",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:47:50 2025",
+ "timestampMillis": "1752925670698",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/impl/report/verilog/export_syn.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:47:50 2025",
+ "timestampMillis": "1752925670699",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/impl/report/verilog/export_syn.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:47:50 2025",
+ "timestampMillis": "1752925670699",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/impl/verilog",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:47:50 2025",
+ "timestampMillis": "1752925670700",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/impl/report/verilog/export_impl.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:47:50 2025",
+ "timestampMillis": "1752925670700",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/impl/report/verilog/export_impl.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:54:50 2025",
+ "timestampMillis": "1752926090123",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_RTL_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:54:50 2025",
+ "timestampMillis": "1752926090124",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_PLACE_AND_ROUTE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jul 19 16:54:50 2025",
+ "timestampMillis": "1752926090124",
+ "status": {
+  "cmdId": "5dcd11ca-b45d-4653-8e71-4552b3e8860a",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jul 19 16:54:50 2025",
+ "timestampMillis": "1752926090374",
+ "status": {
+  "cmdId": "53b9150b-5cec-4a5d-95ed-9564e7eb3fce",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:54:50 2025",
+ "timestampMillis": "1752926090375",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:54:50 2025",
+ "timestampMillis": "1752926090375",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

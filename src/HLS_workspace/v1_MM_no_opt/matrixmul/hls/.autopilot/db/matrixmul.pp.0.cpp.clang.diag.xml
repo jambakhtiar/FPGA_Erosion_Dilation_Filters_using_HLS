@@ -1,0 +1,55 @@
+<dict>
+  <key>main-file</key>
+  <string>/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/.autopilot/db/matrixmul.pp.0.cpp</string>
+  <key>diagnostics</key>
+  <array>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>directive</string>
+      <key>line</key>
+      <integer>1</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=name=matrixmul_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/hls_config.cfg</string>
+      <key>line</key>
+      <integer>13</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=off=true_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/hls_config.cfg</string>
+      <key>line</key>
+      <integer>14</integer>
+      <key>column</key>
+      <integer>9</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrixmul_XLX_SEP_ PragmaOptions=off=true_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>5471</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+  </array>
+</dict>

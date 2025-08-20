@@ -1,0 +1,74 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Row",
+    "pragma": {
+      "name": "LOOP_FLATTEN"
+    },
+    "slx": false,
+    "sourceFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_ProductPipeline/hls_config.cfg",
+    "sourceLine": 16,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Col",
+    "pragma": {
+      "name": "LOOP_FLATTEN",
+      "option": [
+        {
+          "name": "off",
+          "value": "true"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_ProductPipeline/hls_config.cfg",
+    "sourceLine": 17,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Product",
+    "pragma": {
+      "name": "PIPELINE"
+    },
+    "slx": false,
+    "sourceFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_ProductPipeline/hls_config.cfg",
+    "sourceLine": 15,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrixmul"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "",
+    "sourceLine": 0,
+    "success": true
+  }
+]

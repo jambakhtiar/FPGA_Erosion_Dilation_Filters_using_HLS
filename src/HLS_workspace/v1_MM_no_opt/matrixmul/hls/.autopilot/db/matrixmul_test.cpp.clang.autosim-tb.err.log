@@ -1,0 +1,8 @@
+In file included from /home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/files/matrixmul_test.cpp:3:
+/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/files/matrixmul.h:9:9: warning: 'HW_COSIM' macro redefined [-Wmacro-redefined]
+#define HW_COSIM
+        ^
+<command line>:1:9: note: previous definition is here
+#define HW_COSIM 1
+        ^
+1 warning generated.

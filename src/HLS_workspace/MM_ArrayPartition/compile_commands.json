@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/lab1/MM_ArrayPartition",
+    "arguments": [
+      "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls",
+      "-hls-syn-headers-dir=/home/jam/xilinx/Vitis_HLS/2024.1/common/technology/autopilot",
+      "",
+      "-c",
+      "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/files/matrixmul.cpp"
+    ],
+    "file": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/files/matrixmul.cpp"
+  },
+  {
+    "directory": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/lab1/MM_ArrayPartition",
+    "arguments": [
+      "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/home/jam/xilinx/Vitis_HLS/2024.1/include",
+      "",
+      "-DHW_COSIM",
+      "-c",
+      "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/files/matrixmul_test.cpp"
+    ],
+    "file": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/files/matrixmul_test.cpp"
+  }
+]

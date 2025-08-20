@@ -1,0 +1,35 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
+| Date         : Sat Jul 19 16:54:35 2025
+| Host         : jam-Precision-5510 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_utilization -hierarchical -hierarchical_depth 5 -file ./report/matrixmul_utilization_hierarchical_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : xczu7ev-ffvc1156-2-e
+| Speed File   : -2
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++------------------------------------------------------------+----------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+|                          Instance                          |                             Module                             | Total LUTs | Logic LUTs | LUTRAMs | SRLs | FFs | RAMB36 | RAMB18 | URAM | DSP Blocks |
++------------------------------------------------------------+----------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+| bd_0_wrapper                                               |                                                          (top) |         29 |         29 |       0 |    0 |  45 |      0 |      0 |    0 |          1 |
+|   bd_0_i                                                   |                                                           bd_0 |         29 |         29 |       0 |    0 |  45 |      0 |      0 |    0 |          1 |
+|     hls_inst                                               |                                                bd_0_hls_inst_0 |         29 |         29 |       0 |    0 |  45 |      0 |      0 |    0 |          1 |
+|       inst                                                 |                                      bd_0_hls_inst_0_matrixmul |         29 |         29 |       0 |    0 |  45 |      0 |      0 |    0 |          1 |
+|         (inst)                                             |                                      bd_0_hls_inst_0_matrixmul |         21 |         21 |       0 |    0 |  45 |      0 |      0 |    0 |          0 |
+|         mac_muladd_8s_8s_16ns_16_4_1_U1                    |         bd_0_hls_inst_0_matrixmul_mac_muladd_8s_8s_16ns_16_4_1 |          9 |          9 |       0 |    0 |   0 |      0 |      0 |    0 |          1 |
+|           matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U | bd_0_hls_inst_0_matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0 |          9 |          9 |       0 |    0 |   0 |      0 |      0 |    0 |          1 |
++------------------------------------------------------------+----------------------------------------------------------------+------------+------------+---------+------+-----+--------+--------+------+------------+
+* Note: The sum of lower-level cells may be larger than their parent cells total, due to cross-hierarchy LUT combining
+
+

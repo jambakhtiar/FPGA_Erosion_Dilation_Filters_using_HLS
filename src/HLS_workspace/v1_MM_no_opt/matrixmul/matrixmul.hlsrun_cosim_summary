@@ -1,0 +1,226 @@
+<ENTRY>
+{
+ "thisFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/matrixmul.hlsrun_cosim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Jul 19 16:43:27 2025",
+ "timestampMillis": "1752925407260",
+ "buildStep": {
+  "cmdId": "568c1328-6144-4ca2-bc69-7736e06fffda",
+  "name": "vitis-run",
+  "logFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/logs/matrixmul.steps.log",
+  "commandLine": "/home/jam/xilinx/Vitis/2024.1/bin/unwrapped/lnx64.o/vitis-run  --mode hls --cosim --config /home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/hls_config.cfg --work_dir matrixmul ",
+  "args": [
+   "--mode",
+   "hls",
+   "--cosim",
+   "--config",
+   "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/hls_config.cfg",
+   "--work_dir",
+   "matrixmul"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jul 19 16:43:27 2025",
+ "timestampMillis": "1752925407260",
+ "status": {
+  "cmdId": "568c1328-6144-4ca2-bc69-7736e06fffda",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Jul 19 16:43:33 2025",
+ "timestampMillis": "1752925413857",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_RTL_COSIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "matrixmul",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/files/matrixmul.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sat Jul 19 16:43:33 2025",
+ "timestampMillis": "1752925413858",
+ "buildStep": {
+  "cmdId": "8d34252e-fed0-47ea-a9b5-1feb51c41cee",
+  "name": "cosim_design",
+  "logFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/hls.log",
+  "commandLine": "cosim_design",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jul 19 16:43:33 2025",
+ "timestampMillis": "1752925413858",
+ "status": {
+  "cmdId": "8d34252e-fed0-47ea-a9b5-1feb51c41cee",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:43:33 2025",
+ "timestampMillis": "1752925413859",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/sim/report/matrixmul_cosim.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_COSIMULATION",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:43:33 2025",
+ "timestampMillis": "1752925413859",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:43:33 2025",
+ "timestampMillis": "1752925413860",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH_COSIM",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:43:33 2025",
+ "timestampMillis": "1752925413860",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_TIMELINE_TRACE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:43:33 2025",
+ "timestampMillis": "1752925413860",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_WAVE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jul 19 16:43:50 2025",
+ "timestampMillis": "1752925430846",
+ "status": {
+  "cmdId": "8d34252e-fed0-47ea-a9b5-1feb51c41cee",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jul 19 16:43:51 2025",
+ "timestampMillis": "1752925431114",
+ "status": {
+  "cmdId": "568c1328-6144-4ca2-bc69-7736e06fffda",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:43:51 2025",
+ "timestampMillis": "1752925431114",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:43:51 2025",
+ "timestampMillis": "1752925431115",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

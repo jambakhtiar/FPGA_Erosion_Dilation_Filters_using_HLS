@@ -1,0 +1,92 @@
+<profile>
+<RunData>
+  <RUN_TYPE>synth</RUN_TYPE>
+  <VIVADO_VERSION>v.2024.1</VIVADO_VERSION>
+  <ROOT_MODULE_CELL>bd_0_i/hls_inst</ROOT_MODULE_CELL>
+</RunData>
+<TimingReport>
+  <TargetClockPeriod>10.000</TargetClockPeriod>
+  <AchievedClockPeriod>0.967</AchievedClockPeriod>
+  <CLOCK_NAME>ap_clk</CLOCK_NAME>
+  <CP_FINAL>0.967</CP_FINAL>
+  <CP_ROUTE>NA</CP_ROUTE>
+  <CP_SYNTH>0.967</CP_SYNTH>
+  <CP_TARGET>10.000</CP_TARGET>
+  <SLACK_FINAL>9.033</SLACK_FINAL>
+  <SLACK_ROUTE></SLACK_ROUTE>
+  <SLACK_SYNTH>9.033</SLACK_SYNTH>
+  <TIMING_MET>TRUE</TIMING_MET>
+  <TNS_FINAL>0.000</TNS_FINAL>
+  <TNS_ROUTE>NA</TNS_ROUTE>
+  <TNS_SYNTH>0.000</TNS_SYNTH>
+  <WNS_FINAL>9.033</WNS_FINAL>
+  <WNS_ROUTE>NA</WNS_ROUTE>
+  <WNS_SYNTH>9.033</WNS_SYNTH>
+</TimingReport>
+<AreaReport>
+  <Resources>
+    <BRAM>0</BRAM>
+    <CLB>0</CLB>
+    <DSP>1</DSP>
+    <FF>45</FF>
+    <LATCH>0</LATCH>
+    <LUT>31</LUT>
+    <SRL>0</SRL>
+    <URAM>0</URAM>
+  </Resources>
+  <AvailableResources>
+    <BRAM>624</BRAM>
+    <CLB>0</CLB>
+    <DSP>1728</DSP>
+    <FF>460800</FF>
+    <LUT>230400</LUT>
+    <URAM>96</URAM>
+  </AvailableResources>
+</AreaReport>
+<RtlModules>
+  <RtlModule CELL="inst" DEPTH="0" FILE_NAME="bd_0_hls_inst_0.v" ORIG_REF_NAME="matrixmul" TOP_CELL="bd_0_i/hls_inst/inst">
+    <SubModules count="1">mac_muladd_8s_8s_16ns_16_4_1_U1</SubModules>
+    <Resources DSP="1" FF="45" LUT="31" LogicLUT="31"/>
+    <LocalResources FF="45" LUT="22" LogicLUT="22"/>
+  </RtlModule>
+  <RtlModule CELL="inst/mac_muladd_8s_8s_16ns_16_4_1_U1" DEPTH="1" FILE_NAME="matrixmul.v" ORIG_REF_NAME="matrixmul_mac_muladd_8s_8s_16ns_16_4_1">
+    <Resources DSP="1" LUT="9" LogicLUT="9"/>
+  </RtlModule>
+</RtlModules>
+<TimingPaths>
+  <TPATH DATAPATH_DELAY="0.695" DATAPATH_LOGIC_DELAY="0.284" DATAPATH_NET_DELAY="0.411" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C[1]" LOGIC_LEVELS="1" MAX_FANOUT="2" SLACK="9.033" STARTPOINT_PIN="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_15" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="matrixmul.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="0.684" DATAPATH_LOGIC_DELAY="0.269" DATAPATH_NET_DELAY="0.415" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C[7]" LOGIC_LEVELS="1" MAX_FANOUT="2" SLACK="9.050" STARTPOINT_PIN="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_9" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="matrixmul.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="0.681" DATAPATH_LOGIC_DELAY="0.279" DATAPATH_NET_DELAY="0.402" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C[9]" LOGIC_LEVELS="1" MAX_FANOUT="2" SLACK="9.051" STARTPOINT_PIN="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_7" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="matrixmul.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="0.664" DATAPATH_LOGIC_DELAY="0.254" DATAPATH_NET_DELAY="0.410" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST/C[5]" LOGIC_LEVELS="1" MAX_FANOUT="2" SLACK="9.068" STARTPOINT_PIN="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_OUTPUT_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg_i_11" PRIMITIVE_TYPE="CLB.LUT.LUT2" FILE_NAME="matrixmul.v" LINE_NUMBER="9"/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_C_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+  <TPATH DATAPATH_DELAY="0.894" DATAPATH_LOGIC_DELAY="0.894" DATAPATH_NET_DELAY="0.000" ENDPOINT_PIN="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_M_DATA_INST/V[0]" LOGIC_LEVELS="2" MAX_FANOUT="1" SLACK="9.068" STARTPOINT_PIN="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST/CLK">
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_A_B_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_PREADD_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_MULTIPLIER_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+    <CELL NAME="bd_0_i/hls_inst/inst/mac_muladd_8s_8s_16ns_16_4_1_U1/matrixmul_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0_U/p_reg_reg/DSP_M_DATA_INST" PRIMITIVE_TYPE="ARITHMETIC.DSP.DSP48E2" FILE_NAME="" LINE_NUMBER=""/>
+  </TPATH>
+</TimingPaths>
+<VivadoReportFiles>
+  <ReportFile TYPE="design_analysis" PATH="verilog/report/matrixmul_design_analysis_synth.rpt"/>
+  <ReportFile TYPE="failfast" PATH="verilog/report/matrixmul_failfast_synth.rpt"/>
+  <ReportFile TYPE="timing" PATH="verilog/report/matrixmul_timing_synth.rpt"/>
+  <ReportFile TYPE="timing_paths" PATH="verilog/report/matrixmul_timing_paths_synth.rpt"/>
+  <ReportFile TYPE="utilization" PATH="verilog/report/matrixmul_utilization_synth.rpt"/>
+  <ReportFile TYPE="utilization_hierarchical" PATH="verilog/report/matrixmul_utilization_hierarchical_synth.rpt"/>
+</VivadoReportFiles>
+</profile>

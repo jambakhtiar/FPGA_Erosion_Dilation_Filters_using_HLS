@@ -1,0 +1,11 @@
+{
+  "name": "v1_MM_no_opt",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "matrixmul"
+  }
+}

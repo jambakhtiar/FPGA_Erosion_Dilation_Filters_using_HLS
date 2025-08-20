@@ -1,0 +1,175 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ARRAY_PARTITION",
+      "option": [
+        {
+          "name": "complete",
+          "value": ""
+        },
+        {
+          "name": "dim",
+          "value": "2"
+        },
+        {
+          "name": "variable",
+          "value": "b"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_FunctionPipeline/hls_config.cfg",
+    "sourceLine": 19,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "ARRAY_PARTITION",
+      "option": [
+        {
+          "name": "complete",
+          "value": ""
+        },
+        {
+          "name": "dim",
+          "value": "2"
+        },
+        {
+          "name": "variable",
+          "value": "a"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_FunctionPipeline/hls_config.cfg",
+    "sourceLine": 20,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "bram",
+          "value": ""
+        },
+        {
+          "name": "port",
+          "value": "a"
+        },
+        {
+          "name": "storage_type",
+          "value": "ram_1p"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_FunctionPipeline/hls_config.cfg",
+    "sourceLine": 17,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "bram",
+          "value": ""
+        },
+        {
+          "name": "port",
+          "value": "b"
+        },
+        {
+          "name": "storage_type",
+          "value": "ram_1p"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_FunctionPipeline/hls_config.cfg",
+    "sourceLine": 18,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 4,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "PIPELINE"
+    },
+    "slx": false,
+    "sourceFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_FunctionPipeline/hls_config.cfg",
+    "sourceLine": 15,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 5,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Row",
+    "pragma": {
+      "name": "PIPELINE",
+      "option": [
+        {
+          "name": "off",
+          "value": "true"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_FunctionPipeline/hls_config.cfg",
+    "sourceLine": 16,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrixmul",
+    "id": 6,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrixmul"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "",
+    "sourceLine": 0,
+    "success": true
+  }
+]

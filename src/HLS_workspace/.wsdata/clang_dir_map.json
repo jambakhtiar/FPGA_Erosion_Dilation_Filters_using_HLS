@@ -1,0 +1,7 @@
+{
+  "workspaceRoot": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/lab1",
+  "mapping": {
+    "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/files/matrixmul.cpp": "MM_ArrayPartition",
+    "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/files/matrixmul_test.cpp": "MM_ArrayPartition"
+  }
+}

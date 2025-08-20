@@ -1,0 +1,224 @@
+{
+    "rules": {
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul.cpp.0.o', '/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul.cpp.0.o.d']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang",
+                "-c",
+                "-MD",
+                "-MF",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/data/include",
+                "-vitis-hls=/home/jam/xilinx/Vitis_HLS/2024.1",
+                "-fhlstoplevel=matrixmul",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "../files/matrixmul.cpp",
+                "-o",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul.cpp.0.o"
+            ],
+            "exectime": 0.08214974403381348,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+        },
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul.cpp.0.bc', '/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul.cpp.0.bc.d']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang",
+                "-c",
+                "-emit-llvm",
+                "-MD",
+                "-MF",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul.cpp.0.bc.d",
+                "-fhls",
+                "-hls-syn-headers-dir=/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/data/autopilot",
+                "-vitis-hls=/home/jam/xilinx/Vitis_HLS/2024.1",
+                "-fhlstoplevel=matrixmul",
+                "-fslxtrace",
+                "../files/matrixmul.cpp",
+                "-o",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul.cpp.0.bc"
+            ],
+            "exectime": 0.09611296653747559,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+        },
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul_test.cpp.0.o', '/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul_test.cpp.0.o.d']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang",
+                "-c",
+                "-DHW_COSIM",
+                "-MD",
+                "-MF",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul_test.cpp.0.o.d",
+                "-fhls-tb",
+                "-hls-sim-headers-dir=/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/data/include",
+                "-vitis-hls=/home/jam/xilinx/Vitis_HLS/2024.1",
+                "-fhlstoplevel=matrixmul",
+                "-fslxskipfunctionbody",
+                "-fslxtrace",
+                "../files/matrixmul_test.cpp",
+                "-o",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul_test.cpp.0.o"
+            ],
+            "exectime": 0.4534158706665039,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+        },
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/syn_srcs.bc']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/llvm-link",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul.cpp.0.bc",
+                "-o",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/syn_srcs.bc"
+            ],
+            "exectime": 0.008290290832519531,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+        },
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/opt",
+                "-check-single-toplevel",
+                "-make-non-toplevel-internal",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/syn_srcs.bc",
+                "-o",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc"
+            ],
+            "exectime": 0.015778303146362305,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+        },
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/app.exe']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang++",
+                "-o",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/app.exe",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul_test.cpp.0.o",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/matrixmul.cpp.0.o",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/syn_srcs.opt.bc",
+                "-fhls",
+                "-fhlstoplevel=matrixmul",
+                "-vitis-hls=/home/jam/xilinx/Vitis_HLS/2024.1",
+                "-fslxtrace",
+                "-Wl,-mllvm,-profilerOutputDirectory=/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/profiler/0",
+                "-fslxpthreads"
+            ],
+            "exectime": 0.11542010307312012,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+        },
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/clang-scan-deps",
+                "--compilation-database=/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/instrument/app_0/compile_commands.json",
+                "--format=vitiscxx",
+                "--reuse-filemanager=false",
+                "--output=/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/instrument/app_0/binary_dependencies.json"
+            ],
+            "exectime": 0.03964805603027344,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+        },
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/output/app.functionGraph']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/staticCallGraph",
+                "-i",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "-o",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/output/app.functionGraph"
+            ],
+            "exectime": 0.05126500129699707,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+        },
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/output/app.functionMapping']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/functionMapper",
+                "--static-xml",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "--function-mapping",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/output/app.functionMapping",
+                "--ir-module",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "--fn",
+                "210"
+            ],
+            "exectime": 0.026242733001708984,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+        },
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/bin/.tracing_stdout.txt', '/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/bin/.tracing_stderr.txt']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/rwd",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/build/app.exe"
+            ],
+            "exectime": 0.052980661392211914,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/tracing/csim/build"
+        },
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/output/reduced_programmodel.app']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/optimizer",
+                "-DFGPass",
+                "-appName=app",
+                "-outputDir",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/output",
+                "-logDir",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/log",
+                "-pmout=/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/output/reduced_programmodel.app",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "-staticFile",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "-traceFile",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/profiler/0/app_0_1/thread0000-trace.txt",
+                "-o",
+                "/dev/null"
+            ],
+            "exectime": 0.05670022964477539,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+        },
+        "['/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/dataflow/0/taskgraph.json']": {
+            "command": [
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/libexec/parallelismSelector",
+                "-g",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/output/reduced_programmodel.app",
+                "--basepath",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt",
+                "--static-xml",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/instrument/app_0/static.xml",
+                "--fpga-part",
+                "xczu7ev-ffvc1156-2-e",
+                "--device-totals",
+                "/home/jam/xilinx/Vitis_HLS/2024.1/vcxx/data/platform/logic/fpga.devicetotals",
+                "--clock-frequency",
+                "100.0",
+                "--out-dir",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/output",
+                "--log-dir",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/log",
+                "--mapping",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/output/app.functionMapping",
+                "--objective",
+                "none",
+                "--performance-target",
+                "target_both",
+                "--max-array-optimization-factor",
+                "1024",
+                "--complete-partition-limit",
+                "4",
+                "--lut-constraint",
+                "100.0",
+                "--ff-constraint",
+                "100.0",
+                "--dsp-constraint",
+                "100.0",
+                "--bram-constraint",
+                "100.0",
+                "--uram-constraint",
+                "100.0",
+                "--ir-module",
+                "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/.internal/instrument/app_0/project.symbols.bc",
+                "--max-iterations",
+                "1000",
+                "--max-iterations-branch-full-log",
+                "20",
+                "--df-id",
+                "0",
+                "--df-target",
+                "%F210"
+            ],
+            "exectime": 0.5658557415008545,
+            "cwd": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+---
+MainSourceFile:  /home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_ArrayPartition/MM_ArrayPartition/hls/.autopilot/db/matrixmul.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'ram_1p is not valid value for option interface BRAM''s option ''storage_type'''
+    FileOffset:      17
+    FilePath:        /home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_ArrayPartition/hls_config.cfg
+    Replacements:    
+  - DiagnosticName:  clang-diagnostic-error
+    Message:         'ram_1p is not valid value for option interface BRAM''s option ''storage_type'''
+    FileOffset:      18
+    FilePath:        /home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_ArrayPartition/hls_config.cfg
+    Replacements:    
+...

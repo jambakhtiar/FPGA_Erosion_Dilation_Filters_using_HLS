@@ -1,0 +1,120 @@
+
+
+================================================================
+== Synthesis Summary Report of 'matrixmul'
+================================================================
++ General Information: 
+    * Date:           Sat Jul 19 17:49:55 2025
+    * Version:        2024.1 (Build 5069499 on May 21 2024)
+    * Project:        MM_FifoInterface
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |   Modules   | Issue|      | Latency | Latency | Iteration|         | Trip |          |      |         |           |           |     |
+    |   & Loops   | Type | Slack| (cycles)|   (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF    |    LUT    | URAM|
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+    |+ matrixmul  |    II|  4.19|       33|  330.000|         -|       27|     -|    rewind|     -|  2 (~0%)|  116 (~0%)|  330 (~0%)|    -|
+    | o Row_Col   |    II|  7.30|       31|  310.000|         8|        3|     9|       yes|     -|        -|          -|          -|    -|
+    +-------------+------+------+---------+---------+----------+---------+------+----------+------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AP_FIFO
++-----------+-----------+------------+
+| Interface | Direction | Data Width |
++-----------+-----------+------------+
+| a_0       | in        | 8          |
+| a_1       | in        | 8          |
+| a_2       | in        | 8          |
+| b_0       | in        | 8          |
+| b_1       | in        | 8          |
+| b_2       | in        | 8          |
+| res       | out       | 16         |
++-----------+-----------+------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| a        | in        | char*    |
+| b        | in        | char*    |
+| res      | out       | short*   |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| a        | a_0          | interface |
+| a        | a_1          | interface |
+| a        | a_2          | interface |
+| b        | b_0          | interface |
+| b        | b_1          | interface |
+| b        | b_2          | interface |
+| res      | res          | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------+-----+--------+-------------+--------+-----------+---------+
+| Name                              | DSP | Pragma | Variable    | Op     | Impl      | Latency |
++-----------------------------------+-----+--------+-------------+--------+-----------+---------+
+| + matrixmul                       | 2   |        |             |        |           |         |
+|   select_ln16_fu_170_p3           |     |        | select_ln16 | select | auto_sel  | 0       |
+|   add_ln19_fu_198_p2              |     |        | add_ln19    | add    | fabric    | 0       |
+|   mac_muladd_8s_8s_16ns_16_4_1_U3 | 1   |        | mul_ln26    | mul    | dsp_slice | 3       |
+|   mul_8s_8s_16_1_1_U1             |     |        | mul_ln26_1  | mul    | auto      | 0       |
+|   mac_muladd_8s_8s_16s_16_4_1_U2  | 1   |        | mul_ln26_2  | mul    | dsp_slice | 3       |
+|   mac_muladd_8s_8s_16s_16_4_1_U2  | 1   |        | add_ln26    | add    | dsp_slice | 3       |
+|   mac_muladd_8s_8s_16ns_16_4_1_U3 | 1   |        | tmp         | add    | dsp_slice | 3       |
+|   j_fu_178_p2                     |     |        | j           | add    | fabric    | 0       |
+|   icmp_ln21_fu_184_p2             |     |        | icmp_ln21   | seteq  | auto      | 0       |
+|   icmp_ln19_fu_204_p2             |     |        | icmp_ln19   | seteq  | auto      | 0       |
++-----------------------------------+-----+--------+-------------+--------+-----------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+---------------------------+-------------------------------------+
+| Type            | Options                   | Location                            |
++-----------------+---------------------------+-------------------------------------+
+| array_partition | complete dim=2 variable=a | hls_config.cfg:21 in matrixmul, a   |
+| array_partition | complete dim=2 variable=b | hls_config.cfg:20 in matrixmul, b   |
+| interface       | ap_fifo port=a            | hls_config.cfg:17 in matrixmul, a   |
+| interface       | ap_fifo port=b            | hls_config.cfg:18 in matrixmul, b   |
+| interface       | ap_fifo port=res          | hls_config.cfg:19 in matrixmul, res |
+| pipeline        |                           | hls_config.cfg:15 in matrixmul      |
+| pipeline        | off=true                  | hls_config.cfg:16 in matrixmul      |
++-----------------+---------------------------+-------------------------------------+
+
+

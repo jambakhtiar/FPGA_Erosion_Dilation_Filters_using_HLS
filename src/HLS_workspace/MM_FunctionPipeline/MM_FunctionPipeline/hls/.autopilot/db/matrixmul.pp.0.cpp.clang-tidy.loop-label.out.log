@@ -1,0 +1,6 @@
+/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_FunctionPipeline/MM_FunctionPipeline/hls/.autopilot/db/matrixmul.pp.0.cpp:6365:57: error: ram_1p is not valid value for option interface BRAM's option 'storage_type' [clang-diagnostic-error]
+#pragma HLSDIRECTIVE INTERFACE bram port=a storage_type=ram_1p
+                                                        ^
+/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/MM_FunctionPipeline/MM_FunctionPipeline/hls/.autopilot/db/matrixmul.pp.0.cpp:6369:57: error: ram_1p is not valid value for option interface BRAM's option 'storage_type' [clang-diagnostic-error]
+#pragma HLSDIRECTIVE INTERFACE bram port=b storage_type=ram_1p
+                                                        ^

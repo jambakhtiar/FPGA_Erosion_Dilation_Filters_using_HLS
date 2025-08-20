@@ -1,0 +1,274 @@
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 19, Column: 8 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Row
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 21, Column: 10 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Col
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 24, Column: 16 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Loop '''
+  - LoopName:        Product
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Row
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:19:8'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Col
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:21:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:24:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:24:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:24:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Col
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:21:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:24:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:24:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:24:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Col
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:21:10'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:24:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:24:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        Product
+  - String:          ''' ('
+  - LoopLoc:         '../files/matrixmul.cpp:24:16'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          matrixmul
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          a
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../files/matrixmul.cpp, Line: 8, Column: 0 }
+Function:        _Z9matrixmulPA3_cS0_PA3_s
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...

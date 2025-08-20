@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt/matrixmul/hls/csim/code_analyzer/app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sat Jul 19 16:22:33 2025",
+ "timestampMillis": "1752924153152",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sat Jul 19 16:22:33 2025",
+ "timestampMillis": "1752924153153",
+ "buildStep": {
+  "cmdId": "aa2c7a2a-6492-11f0-b03c-ab86cda3d48d",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jul 19 16:22:33 2025",
+ "timestampMillis": "1752924153154",
+ "status": {
+  "cmdId": "aa2c7a2a-6492-11f0-b03c-ab86cda3d48d",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sat Jul 19 16:22:34 2025",
+ "timestampMillis": "1752924154315",
+ "status": {
+  "cmdId": "aa2c7a2a-6492-11f0-b03c-ab86cda3d48d",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sat Jul 19 16:22:34 2025",
+ "timestampMillis": "1752924154316",
+ "report": {
+  "path": "/home/jam/Downloads/HLS_Erosion_dilation/vitis_workspace/v1_MM_no_opt",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "aa2c7a2a-6492-11f0-b03c-ab86cda3d48d"
+ }
+}
+</ENTRY>

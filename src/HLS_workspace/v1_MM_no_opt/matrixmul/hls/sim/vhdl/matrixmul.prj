@@ -1,0 +1,9 @@
+vhdl xil_defaultlib "AESL_sim_pkg.vhd"
+sv work "glbl.v"
+vhdl xil_defaultlib "matrixmul.autotb.vhd"
+vhdl xil_defaultlib "matrixmul.vhd"
+vhdl xil_defaultlib "AESL_automem_b.vhd"
+vhdl xil_defaultlib "AESL_automem_a.vhd"
+vhdl xil_defaultlib "matrixmul_mac_muladd_8s_8s_16ns_16_4_1.vhd"
+vhdl xil_defaultlib "AESL_automem_res.vhd"
+
